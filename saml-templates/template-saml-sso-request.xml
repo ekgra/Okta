@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <saml2p:AuthnRequest
 	xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol"
-	AssertionConsumerServiceURL="{SP-ACS-URL}"
-	Destination="{IDP-SSO-URL}"
-	ID="{UNIQUE-GENERATED-ID}"
-	IssueInstant="2021-10-14T18:41:20.295Z"
+	AssertionConsumerServiceURL="http://localhost:8080/cgi-bin/saml-consumer.py"
+	Destination="https://dev-56760216.okta.com/app/dev-56760216_samlproject1_1/exkegieqzxKGZtsdm5d7/sso/saml"
+	ID="saml-123456"
+	IssueInstant="2024-01-14T23:00:00.000Z"
 	ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
 	Version="2.0">
 	<saml2:Issuer
-		xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">{SP-ENTITY-ID}
+		xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">http://localhost:8080/saml-project-1
 	</saml2:Issuer>
 </saml2p:AuthnRequest>
